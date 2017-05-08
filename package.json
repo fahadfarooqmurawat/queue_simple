@@ -1,0 +1,28 @@
+{
+  "name": "queuejs",
+  "version": "1.0.0",
+  "description": "simple queue implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahadfarooqmurawat/QueueJs.git"
+  },
+  "keywords": [
+    "node",
+    "queue",
+    "javascript",
+    "js",
+    "simple",
+    "api",
+    "code"
+  ],
+  "author": "fahad farooq murawat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fahadfarooqmurawat/QueueJs/issues"
+  },
+  "homepage": "https://github.com/fahadfarooqmurawat/QueueJs#readme"
+}
