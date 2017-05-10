@@ -1,5 +1,5 @@
 {
-  "name": "queuejs",
+  "name": "simplequeuejs",
   "version": "1.0.0",
   "description": "simple queue implementation",
   "main": "index.js",
