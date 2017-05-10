@@ -7,6 +7,7 @@ class Queue
 			{
 				_maxLength:{
 					writable:false,
+					enumerable:false,
 					value:queuelengthlimit
 				},
 				_objects:{
@@ -28,6 +29,10 @@ Queue.prototype.isEmpty = function() {
 
 Queue.prototype.size = function() {
 	return this._objects.length;
+}
+
+Queue.prototype.memoryOccupied = function(){
+	return 
 }
 
 Queue.prototype.peek = function(position) {
@@ -66,7 +71,7 @@ Queue.prototype.dequeue = function(){
 }
 
 Queue.prototype.enqueue = function(obj) {
-	if (typeof obj == Object)
+	if (obj&&this._maxLength>this.size())
 	{
 		return this._objects.push(obj);
 	}
