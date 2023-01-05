@@ -11,13 +11,7 @@
     "url": "git+https://github.com/fahadfarooqmurawat/queue_simple.git"
   },
   "keywords": [
-    "node",
-    "queue",
-    "javascript",
-    "js",
-    "simple",
-    "api",
-    "code"
+    "queue"
   ],
   "author": "fahad farooq murawat",
   "license": "ISC",
@@ -26,6 +20,7 @@
   },
   "homepage": "https://github.com/fahadfarooqmurawat/queue_simple#readme",
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
   }
 }

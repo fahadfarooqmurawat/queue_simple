@@ -1,20 +1,29 @@
-describe('Test queue',function(){
-	var Queue = require('../index');
-	var queue = null;
-	var n = 123;
-	var s = 'i am a string';
-	var o = {foo:'bar'};
-	it('create instance of Queue of size 3');
-	it('length should be 0');
-	it('enqueue a number and size should be 1');
-	it('enqueue a string and the size should be 2');
-	it('queue should not be empty');
-	it('enqueue an obj and the size should be 3');
-	it('enqueue garbage and it should fail');
-	it('peek to get the number');
-	it('dequeue to get the number');
-	it('peek at index 1 to get the object');
-	it('dequeue to get the string');
-	it('dequeue to get the obj the size should be 0');
-	it('queue should be empty')
+const { expect } = require("chai");
+
+const Queue = require('../index');
+
+describe('Queue', () => {
+  describe('Empty Queue', () => {
+    const emptyQueue = new Queue();
+
+    it("should have 0 size", () => {
+      expect(emptyQueue.size()).to.equal(0);
+    });
+
+    it("should return null when peeked", () => {
+      expect(emptyQueue.peek()).to.equal(null);
+    });
+
+    it("should return true when isEmpty is called", () => {
+      expect(emptyQueue.isEmpty()).to.equal(true);
+    });
+
+    it("should return null when dequeued", () => {
+      expect(emptyQueue.dequeue()).to.equal(null);
+    });
+
+    it("should return true when isEmpty is called", () => {
+      expect(emptyQueue.isEmpty()).to.equal(true);
+    });
+  });
 });
